@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<main>
+    <header>
+        <h2>Harry Potter</h2>
+        <ol>
+            <li><a href="#s1" class="button"> Характеристики</a></li>
+            <li><a href="#s2" class="button"> Описание</a></li>
+            <li><a href="#s3" class="button"> Отзывы</a></li>
+            <li><a href="#s4" class="button"> Заказать</a></li>
+        </ol>
+    </header>
+    <section class="s1" id="s1">
+        <h2>Характеристики</h2>
+        <div class="row">
+            
+                <img src="img/knigi.png" alt="">
+            
+            <div>
+                <ol>
+                    <li>Автор - Роулинг Джоан Кэтлин</li>
+                    <li>Издательство - Росмэн</li>
+                    <li>Год выпуска - 2001</li>
+                    <li>Тип обложки - Твердый переплет</li>
+                    <li>Автор на обложке - Ролинг Дж. К. Перевод с английского Литвиновой</li>
+                    <li>Размер - 20.5x13x3</li>
+                    <li>Тип обложки - Твердый переплёт</li>
+                    <li>Возрастные ограничения - 6+</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="s2"  id="s2">
+        <h2>Описание</h2>
+        <div class="row">
+            <img src="img/ha1.jpg" alt="">
+            <div id="o2">Алохомора! Открывайте дверь в мир волшебства вместе с Джоан Роулинг! Гарри Поттер – сирота с необычным шрамом на лбу. 11 лет он жил в доме дяди и тёти, пока не узнал, что он – волшебник! Теперь Гарри вместе с новыми друзьями предстоит освоить магию и полёты на метле, найти таинственные крестражи и вступить в борьбу с самим Волан-де-Мортом. Цикл книг состоит из 7 частей. Последняя книга вышла в 2007 году, а поклонники до сих пор помнят и любят историю о мальчике, который выжил. Серия получила множество престижных наград и вошла в список «100 лучших книг всех времён для молодёжи» журнала Time.</div>
+        </div>
+    </section>
+
+
+
+    <section class="s3"  id="s3">
+        <h2>Отзывы</h2>
+        <div class="container">
+            <img src="img/ava1.png" alt="avatar">
+            <p><span>Марина Белова</span> г. Москва</p>
+            <p>Качество товара отличное, доставка быстрая.</p>
+        </div>
+        <div class="container">
+            <img src="img/ava2.png" alt="avatar">
+            <p><span>Алексей Фролов</span> г. Воронеж</p>
+            <p>Пришла посылка быстро, доставка была курьером.</p>
+        </div>
+    </section>
+
+    <section class="s3"  id="s4">
+        <h2>Заказать</h2>
+
+    </section>
+
+
+</main>
+<form action="" id="form1" method="get">
+    <fieldset>
+        <label for="login">Ваше ФИО</label>
+        <input type="text" id="login" name="login">
+        <label for="text">Телефон</label>
+        <input type="text" id="pass" name="pass">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email">
+        <label for="vopros">Дополнительная информация по заказу</label>
+        <textarea name="vopros" type="vopros" id="vopros" cols="60" rows="5"></textarea>
+        <input type="submit" value="Оформить заказ" class="but" id="ok">
+        <input type="reset" value="Очистить" class="but">
+    </fieldset>
+</body>
+</html>

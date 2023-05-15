@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'Harry Potter (Russian Version of Gfdtk) Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./fonts/harrypotterrussianversionofgfdtk-webfont.woff2) format('woff2'),
+    url(./fonts/harrypotterrussianversionofgfdtk-webfont.woff) format('woff');
+}
+
+body{
+    background-image: url(img/fon.jpg);
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shantell Sans';
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+    margin: auto;
+    max-width: 1300px;
+}
+ol{
+    list-style-type: none;
+}
+header{
+display: flex;
+justify-content: space-between;
+align-items: start;
+min-height: 100px;
+padding: 0 50px;
+}
+
+header h2{
+    font-family: 'Harry Potter (Russian Version of Gfdtk) Regular';
+    font-size: xx-large;
+}
+
+header li{
+    display: inline;
+    margin-left: 20px;
+    font-weight: bolder;
+}
+h2{
+    font-weight: lighter;
+    text-align: center;
+}
+section{
+margin-top: 20px;
+}
+.row{
+    display: flex;
+    max-height: 900px;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    
+}
+.s1 img{
+    width: 40%;
+}
+#o2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgba(112, 112, 112, 0.5);
+    border-radius: 5px;
+    font-size: xx-large;
+}
+.s2 img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.s3 img{
+    width: 100%;
+    border: 10px solid rgba(112, 112, 112, 0.5);
+    overflow: hidden;
+}
+
+.container {   width: 75%;
+
+
+    border-radius: 5px; /* скругление углов блока */
+    padding: 16px; /* внутренние поля */
+    margin: 16px auto; /* внешние отступы */
+}
+.container img {
+    float: left; /* обтекание слева */
+    margin-right: 20px; /* пространство между аватаркой и абзацем */
+    border-radius: 50%; /* скругляет аватарку */
+    width: 90px;
+}
+
+.container span {
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.button {
+    text-decoration: none;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 0 .063em, 100% .063em;
+    color: white;
+    padding-bottom: .188em;
+    transition: background-size .5s;
+}
+.button:hover {
+    color: #ffee05;
+    background-size: 100% .063em, 100% .063em;
+    background-position: left bottom;
+    background-image: linear-gradient(#ffee05 50%, #ffee05 50%), linear-gradient(white 50%, white 50%);
+}
+
+@media (max-width:1000px){
+    .s1 .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .s2 .img{
+        max-height: 600px;
+    }
+    #o2{
+        font-size: large;
+    }
+    header li{
+        display: block;
+    }
+    .s3 .row{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .s3 img{
+        width: 25%;
+    }
+    .container {
+        text-align: center;
+    }
+    .container img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+}
+@media (max-width:500px){
+    .s2 .row{
+        flex-direction: column;
+        align-items: center;
+        max-height: 800px;
+    }
+    .s2 img{
+        width: 90%;
+    }
+    #o2{
+        width: 86%;
+    }
+    .container {
+        text-align: center;
+    }
+    .container img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+
+    }
+
+
+
+
+/* форма заказа */
+
+fieldset{
+    width: 500px;
+    margin: auto;
+    border-radius: 5px;
+}
+#form1{
+    color: white;
+}
+#form1 label{
+    display: block;
+    margin: 10px 0;
+}
+#form1 input{
+    border-radius: 5px;
+}
+#form1 textarea{
+    border-radius: 5px;
+}
+#form1 .but{
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: slategray;
+    background-size: 0 .063em, 100% .063em;
+    color: white;
+    padding-bottom: .188em;
+    transition: background-size .5s;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shantell Sans';
+}
+#form1 .but:hover{
+    color: black;
+    background-size: 100% .063em, 100% .063em;
+    background-position: left bottom;
+    background-image: linear-gradient(#ffee05 50%, #ffee05 50%), linear-gradient(white 50%, white 50%);
+}
+
+/* форма заказа после 500p */
+@media (max-width:500px){
+    .s4 .fieldset{
+        width: 200px;
+
+    }
+    .s2 img{
+        width: 90%;
+
+    }
+}
+
+
