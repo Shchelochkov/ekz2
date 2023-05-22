@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
@@ -75,21 +76,29 @@
         <h2>Заказать</h2>
 
     </section>
-
-
+    <form action="" id="form1">
+        <fieldset><legend> Покупка книги</legend>
+            <label><span> ФИО</span>
+                <input type="text" id="login" name="login" required="">
+            </label>
+            <label> <span> Телефон</span>
+                <input type="text" id="tel" name="tel" required="">
+            </label>
+            <label> <span> E-mail</span>
+                <input type="email" id="email" name="email" required="">
+            </label>
+            <label> <span> Дополнительная информация по заказу</span>
+                <textarea name="vopros" type="vopros" id="vopros" cols="30" rows="5"></textarea>
+            </label>
+            <label>Я соглашаюсь с правилами 
+                <input type="radio" name="pravilo" value="pravilo" required="">
+            </label>
+            <input type="submit" value="Оформить заказ" class="but" id="ok">
+            <input type="reset" value="Очистить" class="but" id="out">
+        </fieldset>
+    </form>
 </main>
-<form action="" id="form1" method="get">
-    <fieldset>
-        <label for="login">Ваше ФИО</label>
-        <input type="text" id="login" name="login">
-        <label for="text">Телефон</label>
-        <input type="text" id="pass" name="pass">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email">
-        <label for="vopros">Дополнительная информация по заказу</label>
-        <textarea name="vopros" type="vopros" id="vopros" cols="60" rows="5"></textarea>
-        <input type="submit" value="Оформить заказ" class="but" id="ok">
-        <input type="reset" value="Очистить" class="but">
-    </fieldset>
+
 </body>
 </html>
+
